@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ticket Page</title>
+    <link rel="stylesheet" type="text/css" href="../Styles/main.css">
+</head>
+<style>
+    body{
+        background-color: aliceblue;
+    }
+</style>
+<body>
+    <script src="./main.js">
+    </script>
+    <div class="topnav">
+        <a href="home.html">Home</a>
+        <a href="featured.html">Featured Exhibit</a>
+    </div>
+
+    <div class="t-content">
+        <div class="t-column">
+            <h2>Ticket Price Information</h2>
+            <table>
+                <h3>Daily Admission</h3>
+                <tr>
+                    <th>Guest</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Adult (13+)</td>
+                    <td>$23</td>
+                </tr>
+                <tr>
+                    <td>Students</td>
+                    <td>$19</td>
+                </tr>
+                <tr>
+                    <td>Child (3-12)</td>
+                    <td>$15</td>
+                </tr>
+                <tr>
+                    <td>Children 2 and under</td>
+                    <td>Free</td>
+                </tr>
+
+            </table>
+            <table>
+                <h3>Group Discounts</h3>
+                <tr>
+                    <th>Number of People</th>
+                    <th>Discount</th>
+                </tr>
+                <tr>
+                    <td>10-19 people</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>20-49 people</td>
+                    <td>15%</td>
+                </tr>
+                <tr>
+                    <td>50-99 people</td>
+                    <td>20%</td>
+                </tr>
+                <tr>
+                    <td>100 or more people</td>
+                    <td>25%</td>
+                </tr>
+            </table>
+        </div>
+        <div class="t-column">
+            <h2>Select Tickets</h2>
+            <select name="Adult Tickets" id="atickets" style="background-color: rgb(218, 228, 232);">
+                <option value="1">1 Adult</option>
+                <option value="2">2 Adults</option>
+                <option value="3">3 Adults</option>
+                <option value="4">4 Adults</option>
+                <option value="5">5 Adults</option>
+            </select>
+            <select name="Student Tickets" id="stickets"style="background-color: rgb(218, 228, 232);">
+                <option value="1">1 Student</option>
+                <option value="2">2 Students</option>
+                <option value="3">3 Students</option>
+                <option value="4">4 Students</option>
+                <option value="5">5 Students</option>
+            </select>
+            <select name="Child Tickets" id="ctickets"style="background-color: rgb(218, 228, 232);">
+                <option value="1">1 Child</option>
+                <option value="2">2 Children</option>
+                <option value="3">3 Children</option>
+                <option value="4">4 Children</option>
+                <option value="5">5 Children</option>
+            </select>
+            <form>
+                <button onclick="displayMessage()">Purchase</button> 
+            </form>
+            <p id="button"></p>
+        </div>
+    </div>
+</body>
+
+</html>
