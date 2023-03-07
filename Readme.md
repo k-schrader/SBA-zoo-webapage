@@ -1,4 +1,4 @@
-Kalie Schrader HTML, CSS, and JavaScript Skill Based Assessment
+K Schrader HTML, CSS, and JavaScript Skill Based Assessment
 ===
 
 This is a website designed to exercise skills in front-end development. I have used HTML, 
