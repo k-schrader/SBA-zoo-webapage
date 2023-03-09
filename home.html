@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="../Styles/main.css">
+</head>
+
+<body>
+    <script src="./main.js"></script>
+
+    <header class="h-header" style="background-image: url('../Images/tall.gif');
+    background-repeat: no-repeat;background-attachment: fixed;
+    background-size: cover;">
+        <h2>Tampa Zoo!</h2>
+    </header>
+    <div class="h-container">
+        <div class="h-nav">
+            <nav>
+                <ul>
+                    <li><a href="ticket.html">Buy your tickets!</a></li>
+                    <li><a href="featured.html">Check out our featured exhibit!</a></li>
+                </ul>
+            </nav>
+            <h3>Sign up for our newsletter</h3>
+            <label for="email">Email</label>
+            <input name="email" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="myEmail"><br>
+            <input onclick="changesButton()" type="button" value="Sign up!" id="signbutton"></input>
+            <div class="why"></div>
+            <button onclick="facts()">Why come to the zoo?</button>
+        </div>
+        <div class="h-body">
+            <h2>Come be wild with us! </h2>
+            <img id="lionrun" src="../Images\lion.gif" style="width: 400px; height: 250px;object-fit: cover; border-radius: 10%;
+                box-shadow: 4px 4px lightblue;" onmouseover="lion()" />
+            <p>
+                Our zoo is the largest and most diverse collection of exotic animals on the east coast!
+            </p>
+
+            <h2>Share the love!</h2>
+            <img id="kiss" src="../Images\kiss.gif" style="width: 400px; height: 250px;object-fit: cover;border-radius: 10%;
+                box-shadow: 4px 4px lightblue;" onmouseover="kangaroo()" />
+            <p>Our animals depend on your generosity! Help us take the best care
+                of them by donating here.
+            </p>
+            <div class="donate"></div>
+            <button id="dontateButton" onclick="donate()" ;>
+                Click to donate $5
+            </button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
